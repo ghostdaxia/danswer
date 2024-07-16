@@ -80,14 +80,14 @@ interface QuotesSectionProps {
 
 const QuotesHeader = ({ quotes, isFetching }: QuotesSectionProps) => {
   if ((!quotes || quotes.length === 0) && isFetching) {
-    return <>Extracting quotes...</>;
+    return <>提取引文...</>;
   }
 
   if (!quotes || quotes.length === 0) {
-    return <>No quotes found</>;
+    return <>没有找到引文</>;
   }
 
-  return <>Quotes</>;
+  return <>引文</>;
 };
 
 const QuotesBody = ({ quotes, isFetching }: QuotesSectionProps) => {
@@ -100,7 +100,7 @@ const QuotesBody = ({ quotes, isFetching }: QuotesSectionProps) => {
     return (
       <div className="flex">
         <div className="text-error text-sm my-auto">
-          Did not find any exact quotes to support the above answer.
+          没有找到任何确切的引文来支持这个回答。
         </div>
       </div>
     );

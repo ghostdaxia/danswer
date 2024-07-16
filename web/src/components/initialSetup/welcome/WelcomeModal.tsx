@@ -93,15 +93,14 @@ export function _WelcomeModal({ user }: { user: User | null }) {
               {apiKeyVerified && (
                 <FiCheckCircle className="my-auto mr-2 text-success" />
               )}
-              Step 1: Setup an LLM
+              第1步: 设置LLM
             </Text>
             <div>
               {apiKeyVerified ? (
                 <Text className="mt-2">
-                  LLM setup complete!
+                  LLM设置完毕!
                   <br /> <br />
-                  If you want to change the key later, you&apos;ll be able to
-                  easily to do so in the Admin Panel.
+                  如果您以后想更改密钥，您可以在管理面板中轻松执行此操作。
                 </Text>
               ) : (
                 <ApiKeyForm
@@ -111,14 +110,13 @@ export function _WelcomeModal({ user }: { user: User | null }) {
               )}
             </div>
             <Text className="font-bold mt-6 mb-2">
-              Step 2: Connect Data Sources
+              第2步: 连接数据源
             </Text>
             <div>
               <Text>
-                Connectors are the way that Danswer gets data from your
-                organization&apos;s various data sources. Once setup, we&apos;ll
-                automatically sync data from your apps and docs into Danswer, so
-                you can search through all of them in one place.
+                连接器是毕方从组织的各种数据源获取数据的方式。
+                设置完成后，我们会自动将您的应用程序和文档中的数据同步到平台，
+                以便您可以在一个地方搜索所有内容。
               </Text>
 
               <div className="flex mt-3">
@@ -132,7 +130,7 @@ export function _WelcomeModal({ user }: { user: User | null }) {
                   className="w-fit mx-auto"
                 >
                   <Button size="xs" icon={FiShare2} disabled={!apiKeyVerified}>
-                    Setup your first connector!
+                    配置您的第一个连接器!
                   </Button>
                 </Link>
               </div>
@@ -152,15 +150,15 @@ export function _WelcomeModal({ user }: { user: User | null }) {
               {apiKeyVerified && (
                 <FiCheckCircle className="my-auto mr-2 text-success" />
               )}
-              Step 1: Setup an LLM
+              第1步: 配置LLM
             </Text>
             <div>
               {apiKeyVerified ? (
                 <Text className="mt-2">
-                  LLM setup complete!
+                  LLM配置完毕!
                   <br /> <br />
-                  If you want to change the key later or choose a different LLM,
-                  you&apos;ll be able to easily to do so in the Admin Panel.
+                  如果您以后想更改密钥或选择不同的LLM，
+                  您可以在管理面板中轻松执行此操作。
                 </Text>
               ) : (
                 <div>
@@ -173,13 +171,13 @@ export function _WelcomeModal({ user }: { user: User | null }) {
             </div>
 
             <Text className="font-bold mt-6 mb-2 flex">
-              Step 2: Start Chatting!
+              第2步: 开始会话!
             </Text>
 
             <Text>
-              Click the button below to start chatting with the LLM setup above!
-              Don&apos;t worry, if you do decide later on you want to connect
-              your organization&apos;s knowledge, you can always do that in the{" "}
+              单击下面的按钮开始与配置的LLM进行聊天！
+              别担心，如果您以后决定要连接组织的知识，
+              您可以在 {" "}
               <Link
                 className="text-link"
                 href="/admin/add-connector"
@@ -189,7 +187,7 @@ export function _WelcomeModal({ user }: { user: User | null }) {
                   router.push("/admin/add-connector");
                 }}
               >
-                Admin Panel
+                管理面板中执行此操作
               </Link>
               .
             </Text>
@@ -206,7 +204,7 @@ export function _WelcomeModal({ user }: { user: User | null }) {
                 className="w-fit mx-auto"
               >
                 <Button size="xs" icon={FiShare2} disabled={!apiKeyVerified}>
-                  Start chatting!
+                  开始会话!
                 </Button>
               </Link>
             </div>
@@ -215,20 +213,18 @@ export function _WelcomeModal({ user }: { user: User | null }) {
       );
       break;
     default:
-      title = "🎉 Welcome to Danswer";
+      title = "🎉 欢迎使用毕方";
       body = (
         <>
           <div>
-            <Text>How are you planning on using Danswer?</Text>
+            <Text>比方能做什么?</Text>
           </div>
           <Divider />
           <UsageTypeSection
             title="Search / Chat with Knowledge"
             description={
               <Text>
-                If you&apos;re looking to search through, chat with, or ask
-                direct questions of your organization&apos;s knowledge, then
-                this is the option for you!
+                如果您想搜索、聊天或直接询问您组织内部的知识问题，那么毕方就是您的选择!
               </Text>
             }
             callToAction="Get Started"
@@ -239,8 +235,7 @@ export function _WelcomeModal({ user }: { user: User | null }) {
             title="Secure ChatGPT"
             description={
               <Text>
-                If you&apos;re looking for a pure ChatGPT-like experience, then
-                this is the option for you!
+                如果您正在寻找纯粹的类似ChatGPT的体验，那么毕方是您的选择！
               </Text>
             }
             icon={FiMessageSquare}

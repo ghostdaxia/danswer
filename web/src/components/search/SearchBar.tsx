@@ -34,7 +34,7 @@ export const SearchBar = ({ query, setQuery, onSearch }: SearchBarProps) => {
           className="flex-grow ml-2 h-6 outline-none placeholder-default overflow-hidden whitespace-normal resize-none"
           role="textarea"
           aria-multiline
-          placeholder="Search..."
+          placeholder="搜索..."
           value={query}
           onChange={handleChange}
           onKeyDown={handleKeyDown}

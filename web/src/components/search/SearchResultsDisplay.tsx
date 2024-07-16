@@ -120,7 +120,7 @@ export const SearchResultsDisplay = ({
           <div>
             <div className="flex mb-1">
               <h2 className="text-emphasis font-bold my-auto mb-1 w-full">
-                AI Answer
+                AI回答
               </h2>
             </div>
 
@@ -163,7 +163,7 @@ export const SearchResultsDisplay = ({
       {documents && documents.length > 0 && (
         <div className="mt-4">
           <div className="font-bold text-emphasis border-b mb-3 pb-1 border-border text-lg">
-            Results
+            搜索结果
           </div>
           {removeDuplicateDocs(documents).map((document, ind) => (
             <DocumentDisplay

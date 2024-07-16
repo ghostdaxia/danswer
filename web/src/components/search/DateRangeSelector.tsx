@@ -31,9 +31,9 @@ function DateSelectorItem({
   );
 }
 
-export const LAST_30_DAYS = "Last 30 days";
-export const LAST_7_DAYS = "Last 7 days";
-export const TODAY = "Today";
+export const LAST_30_DAYS = "过去30天";
+export const LAST_7_DAYS = "过去7天";
+export const TODAY = "今天";
 
 export function DateRangeSelector({
   value,
@@ -117,7 +117,7 @@ export function DateRangeSelector({
           {value?.selectValue ? (
             <div className="text-emphasis">{value.selectValue}</div>
           ) : (
-            "Any time..."
+            "任意时间..."
           )}
           {value?.selectValue ? (
             <div

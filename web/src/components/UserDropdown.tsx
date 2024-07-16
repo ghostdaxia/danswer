@@ -87,7 +87,7 @@ export function UserDropdown({
                     className="flex py-3 px-4 rounded cursor-pointer hover:bg-hover-light"
                   >
                     <FiSearch className="my-auto mr-2 text-lg" />
-                    Danswer Search
+                    搜索
                   </Link>
                 )}
                 {settings.chat_page_enabled && (
@@ -97,14 +97,14 @@ export function UserDropdown({
                       className="flex py-3 px-4 rounded cursor-pointer hover:bg-hover-light"
                     >
                       <FiMessageSquare className="my-auto mr-2 text-lg" />
-                      Danswer Chat
+                      会话
                     </Link>
                     <Link
                       href="/assistants/mine"
                       className="flex py-3 px-4 rounded cursor-pointer hover:bg-hover-light"
                     >
                       <FaBrain className="my-auto mr-2 text-lg" />
-                      My Assistants
+                      我的助手
                     </Link>
                   </>
                 )}
@@ -120,7 +120,7 @@ export function UserDropdown({
                   className="flex py-3 px-4 cursor-pointer rounded hover:bg-hover-light"
                 >
                   <FiTool className="my-auto mr-2 text-lg" />
-                  Admin Panel
+                  管理面板
                 </Link>
               </>
             )}
@@ -134,7 +134,7 @@ export function UserDropdown({
                   className="mt-1 flex py-3 px-4 cursor-pointer hover:bg-hover-light"
                 >
                   <FiLogOut className="my-auto mr-2 text-lg" />
-                  Log out
+                  退出登录
                 </div>
               </>
             )}

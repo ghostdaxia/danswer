@@ -59,7 +59,7 @@ export function TagFilter({
       <input
         ref={inputRef}
         className="w-full border border-border py-0.5 px-2 rounded text-sm h-8"
-        placeholder="Find a tag"
+        placeholder="查找标签"
         value={filterValue}
         onChange={(event) => setFilterValue(event.target.value)}
         onFocus={() => setTagOptionsAreVisible(true)}
@@ -84,7 +84,7 @@ export function TagFilter({
             onClick={() => setSelectedTags([])}
             className="pl-0.5 text-xs text-accent cursor-pointer mt-2 w-fit"
           >
-            Clear all
+            全部清除
           </div>
         </div>
       )}
@@ -96,7 +96,7 @@ export function TagFilter({
           >
             <div className="flex border-b border-border font-medium pb-1 text-xs mb-2">
               <FiTag className="mr-1 my-auto" />
-              Tags
+              标签
             </div>
             <div className="flex flex-wrap gap-x-1 gap-y-1">
               {filteredTags.length > 0 ? (
@@ -124,7 +124,7 @@ export function TagFilter({
                   </div>
                 ))
               ) : (
-                <div className="text-sm px-2 py-2">No matching tags found</div>
+                <div className="text-sm px-2 py-2">没有匹配到任何标签</div>
               )}
             </div>
           </div>

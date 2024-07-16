@@ -34,22 +34,20 @@ export function NoCompleteSourcesModal({
   return (
     <Modal
       className="max-w-4xl"
-      title="⏳ None of your connectors have finished a full sync yet"
+      title="⏳ 您的连接器尚未完成完全同步"
       onOutsideClick={() => setIsHidden(true)}
     >
       <div className="text-sm">
         <div>
           <div>
-            You&apos;ve connected some sources, but none of them have finished
-            syncing. Depending on the size of the knowledge base(s) you&apos;ve
-            connected to Danswer, it can take anywhere between 30 seconds to a
-            few days for the initial sync to complete. So far we&apos;ve synced{" "}
-            <b>{totalDocs}</b> documents.
+            您已连接一些源，但都没有完成同步。根据已连接到平台知识库的大小，初始同步可能需要 30 秒到几天的时间才能完成。
+            到目前为止，我们已经同步了{" "}
+            <b>{totalDocs}</b> 篇文档.
             <br />
             <br />
-            To view the status of your syncing connectors, head over to the{" "}
+            要查看同步连接器的状态，请转到{" "}
             <Link className="text-link" href="admin/indexing/status">
-              Existing Connectors page
+              现有连接器页面
             </Link>
             .
             <br />
@@ -60,8 +58,7 @@ export function NoCompleteSourcesModal({
                 setIsHidden(true);
               }}
             >
-              Or, click here to continue and ask questions on the partially
-              synced knowledge set.
+              或者，单击此处继续并就已同步的知识集提出问题。
             </p>
           </div>
         </div>

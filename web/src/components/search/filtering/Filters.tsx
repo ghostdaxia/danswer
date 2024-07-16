@@ -69,12 +69,12 @@ export function SourceSelector({
   return (
     <div>
       <div className="flex mb-4 pb-2 border-b border-border text-emphasis">
-        <h2 className="font-bold my-auto">Filters</h2>
+        <h2 className="font-bold my-auto">筛选</h2>
         <FiFilter className="my-auto ml-2" size="16" />
       </div>
 
       <>
-        <SectionTitle>Time Range</SectionTitle>
+        <SectionTitle>日期范围</SectionTitle>
         <div className="mt-2">
           <DateRangeSelector value={timeRange} onValueChange={setTimeRange} />
         </div>
@@ -82,7 +82,7 @@ export function SourceSelector({
 
       {existingSources.length > 0 && (
         <div className="mt-4">
-          <SectionTitle>Sources</SectionTitle>
+          <SectionTitle>数据源</SectionTitle>
           <div className="px-1">
             {listSourceMetadata()
               .filter((source) => existingSources.includes(source.internalName))
@@ -154,7 +154,7 @@ export function SourceSelector({
       {availableTags.length > 0 && (
         <>
           <div className="mt-4 mb-2">
-            <SectionTitle>Tags</SectionTitle>
+            <SectionTitle>标签</SectionTitle>
           </div>
           <TagFilter
             tags={availableTags}

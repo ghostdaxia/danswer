@@ -32,13 +32,13 @@ interface AnswerSectionProps {
 
 export const AnswerSection = (props: AnswerSectionProps) => {
   let status = "in-progress" as StatusOptions;
-  let header = <>Building answer...</>;
+  let header = <>组织语言中...</>;
   let body = null;
 
   // finished answer
   if (props.quotes !== null || !props.isFetching) {
     status = "success";
-    header = <>AI answer</>;
+    header = <>AI回答</>;
     if (props.answer) {
       body = (
         <ReactMarkdown
@@ -49,13 +49,13 @@ export const AnswerSection = (props: AnswerSectionProps) => {
         </ReactMarkdown>
       );
     } else {
-      body = <div>Information not found</div>;
+      body = <div>未发现任何相关信息</div>;
     }
     // error while building answer (NOTE: if error occurs during quote generation
     // the above if statement will hit and the error will not be displayed)
   } else if (props.error) {
     status = "failed";
-    header = <>Error while building answer</>;
+    header = <>生成回答时出现问题</>;
     body = (
       <div className="flex">
         <div className="text-error my-auto ml-1">{props.error}</div>
@@ -64,7 +64,7 @@ export const AnswerSection = (props: AnswerSectionProps) => {
     // answer is streaming
   } else if (props.answer) {
     status = "success";
-    header = <>AI answer</>;
+    header = <>AI回答</>;
     body = (
       <ReactMarkdown
         className="prose text-sm max-w-full"
@@ -76,7 +76,7 @@ export const AnswerSection = (props: AnswerSectionProps) => {
   }
   if (props.nonAnswerableReason) {
     status = "warning";
-    header = <>Building best effort AI answer...</>;
+    header = <>正在努力计算最佳AI回复...</>;
   }
 
   return (
@@ -92,8 +92,7 @@ export const AnswerSection = (props: AnswerSectionProps) => {
           {body}
           {props.nonAnswerableReason && !props.isFetching && (
             <div className="mt-4 text-sm">
-              <b className="font-medium">Warning:</b> the AI did not think this
-              question was answerable.{" "}
+              <b className="font-medium">警告:</b> AI认为这个问题还无法回答.{" "}
               <div className="italic mt-1 ml-2">
                 {props.nonAnswerableReason}
               </div>

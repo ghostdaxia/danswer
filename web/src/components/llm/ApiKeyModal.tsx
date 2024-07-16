@@ -45,17 +45,16 @@ export const ApiKeyModal = ({ user }: { user: User | null }) => {
       <div className="max-h-[75vh] overflow-y-auto flex flex-col px-4">
         <div>
           <div className="mb-5 text-sm">
-            Please setup an LLM below in order to start using Danswer Search or
-            Danswer Chat. Don&apos;t worry, you can always change this later in
-            the Admin Panel.
+            请在下面设置一个LLM，以便开始使用毕方搜索或毕方会话。
+            不用担心，您可以随时在管理员面板中更改此设置。
             <br />
             <br />
-            Or if you&apos;d rather look around first,{" "}
+            或者您可以先浏览一下平台功能,{" "}
             <strong
               onClick={() => setForceHidden(true)}
               className="text-link cursor-pointer"
             >
-              skip this step
+              跳过这一步。
             </strong>
             .
           </div>

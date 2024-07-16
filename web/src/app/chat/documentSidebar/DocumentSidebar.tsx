@@ -118,7 +118,7 @@ export function DocumentSidebar({
                 ))
               ) : (
                 <div className="mx-3">
-                  <Text>No documents found for the query.</Text>
+                  <Text>没有找到与此查询相关的文档。</Text>
                 </div>
               )}
             </div>
@@ -127,8 +127,7 @@ export function DocumentSidebar({
           !isLoading && (
             <div className="ml-4 mr-3">
               <Text>
-                When you run ask a question, the retrieved documents will show
-                up here!
+                提问后，搜索到的文档会显示在这里！
               </Text>
             </div>
           )
@@ -138,7 +137,7 @@ export function DocumentSidebar({
       <div className="text-sm mb-4 border-t border-border pt-4 overflow-y-hidden flex flex-col">
         <div className="flex border-b border-border px-3">
           <div className="flex">
-            <SectionHeader name="Selected Documents" icon={FiFileText} />
+            <SectionHeader name="已选择的文档" icon={FiFileText} />
 
             {tokenLimitReached && (
               <div className="ml-2 my-auto">
@@ -203,8 +202,7 @@ export function DocumentSidebar({
         ) : (
           !isLoading && (
             <Text className="mx-3 py-3">
-              Select documents from the retrieved documents section to chat
-              specifically with them!
+              针对已选择的文档进行会话！
             </Text>
           )
         )}

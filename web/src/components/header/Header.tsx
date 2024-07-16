@@ -33,11 +33,11 @@ export function Header({ user }: HeaderProps) {
           }
         >
           <div className="flex">
-            <div className="h-[32px] w-[30px]">
+            <div className="h-[32px] w-[50px]">
               <Image src="/logo.png" alt="Logo" width="1419" height="1520" />
             </div>
-            <h1 className="flex text-2xl text-strong font-bold my-auto">
-              Danswer
+            <h1 className="flex text-2xl text-strong font-bold my-auto header-word">
+              &nbsp;<span className="i-color"></span><span>毕方知识智能服务平台</span>
             </h1>
           </div>
         </Link>
@@ -47,21 +47,21 @@ export function Header({ user }: HeaderProps) {
           <>
             <Link
               href="/search"
-              className={"ml-6 h-full flex flex-col hover:bg-hover"}
+              className={"ml-6 h-full flex flex-col hover:bg-hover hd-hover"}
             >
               <div className="w-24 flex my-auto">
-                <div className={"mx-auto flex text-strong px-2"}>
+                <div className={"mx-auto flex text-strong px-2 header-word"}>
                   <FiSearch className="my-auto mr-1" />
-                  <h1 className="flex text-sm font-bold my-auto">Search</h1>
+                  <h1 className="flex text-sm font-bold my-auto header-word">搜索</h1>
                 </div>
               </div>
             </Link>
 
-            <Link href="/chat" className="h-full flex flex-col hover:bg-hover">
+            <Link href="/chat" className="h-full flex flex-col hover:bg-hover hd-hover">
               <div className="w-24 flex my-auto">
-                <div className="mx-auto flex text-strong px-2">
+                <div className="mx-auto flex text-strong px-2 header-word">
                   <FiMessageSquare className="my-auto mr-1" />
-                  <h1 className="flex text-sm font-bold my-auto">Chat</h1>
+                  <h1 className="flex text-sm font-bold my-auto header-word">会话</h1>
                 </div>
               </div>
             </Link>

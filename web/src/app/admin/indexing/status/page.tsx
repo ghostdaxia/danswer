@@ -67,11 +67,11 @@ export default function Status() {
     <div className="mx-auto container">
       <AdminPageTitle
         icon={<NotebookIcon size={32} />}
-        title="Existing Connectors"
+        title="现有的连接器"
         farRightElement={
           <Link href="/admin/add-connector">
             <Button color="green" size="xs">
-              Add Connector
+              增加连接器
             </Button>
           </Link>
         }

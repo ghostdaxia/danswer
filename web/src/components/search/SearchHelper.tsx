@@ -42,10 +42,9 @@ const getAssistantMessage = ({
   ) {
     return (
       <div>
-        This doesn&apos;t seem like a question for a Generative AI. Do you still
-        want to have{" "}
+        这似乎不是一个问AI的问题，你还想让{" "}
         <span className={CLICKABLE_CLASS_NAME} onClick={forceQADisplay}>
-          GPT give a response?
+          GPT来回答吗?
         </span>
       </div>
     );
@@ -92,7 +91,7 @@ export const SearchHelper: React.FC<Props> = (props) => {
     <div className="border border-border rounded p-3 text-sm">
       <div className="flex">
         <BrainIcon size={20} />
-        <b className="ml-2 text-strong">AI Assistant</b>
+        <b className="ml-2 text-strong">AI助手</b>
       </div>
 
       <div className="mt-1">{message}</div>

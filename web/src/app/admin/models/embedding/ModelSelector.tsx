@@ -35,7 +35,7 @@ export function ModelOption({
           href={model.link}
           className="text-xs text-link mx-1 mt-1"
         >
-          See More Details
+          查看更多详情
         </a>
       )}
       {onSelect && (
@@ -57,7 +57,7 @@ export function ModelOption({
             mt-auto`}
           onClick={() => onSelect(model)}
         >
-          Select Model
+          选择模型
         </div>
       )}
     </div>

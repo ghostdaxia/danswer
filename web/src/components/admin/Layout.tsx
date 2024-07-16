@@ -58,13 +58,13 @@ export async function Layout({ children }: { children: React.ReactNode }) {
           <AdminSidebar
             collections={[
               {
-                name: "Connectors",
+                name: "连接器",
                 items: [
                   {
                     name: (
                       <div className="flex">
                         <NotebookIcon size={18} />
-                        <div className="ml-1">Existing Connectors</div>
+                        <div className="ml-1">现有连接器</div>
                       </div>
                     ),
                     link: "/admin/indexing/status",
@@ -73,7 +73,7 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                     name: (
                       <div className="flex">
                         <ConnectorIcon size={18} />
-                        <div className="ml-1.5">Add Connector</div>
+                        <div className="ml-1.5">增加连接器</div>
                       </div>
                     ),
                     link: "/admin/add-connector",
@@ -81,13 +81,13 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                 ],
               },
               {
-                name: "Document Management",
+                name: "文档管理",
                 items: [
                   {
                     name: (
                       <div className="flex">
                         <BookmarkIcon size={18} />
-                        <div className="ml-1">Document Sets</div>
+                        <div className="ml-1">文档集</div>
                       </div>
                     ),
                     link: "/admin/documents/sets",
@@ -96,7 +96,7 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                     name: (
                       <div className="flex">
                         <ZoomInIcon size={18} />
-                        <div className="ml-1">Explorer</div>
+                        <div className="ml-1">资源管理器</div>
                       </div>
                     ),
                     link: "/admin/documents/explorer",
@@ -105,7 +105,7 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                     name: (
                       <div className="flex">
                         <ThumbsUpIcon size={18} />
-                        <div className="ml-1">Feedback</div>
+                        <div className="ml-1">反馈</div>
                       </div>
                     ),
                     link: "/admin/documents/feedback",
@@ -113,26 +113,26 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                 ],
               },
               {
-                name: "Custom Assistants",
+                name: "自定义助手",
                 items: [
                   {
                     name: (
                       <div className="flex">
                         <RobotIcon size={18} />
-                        <div className="ml-1">Assistants</div>
+                        <div className="ml-1">助手</div>
                       </div>
                     ),
                     link: "/admin/assistants",
                   },
-                  {
-                    name: (
-                      <div className="flex">
-                        <FiSlack size={18} />
-                        <div className="ml-1">Slack Bots</div>
-                      </div>
-                    ),
-                    link: "/admin/bot",
-                  },
+                  // {
+                  //   name: (
+                  //     <div className="flex">
+                  //       <FiSlack size={18} />
+                  //       <div className="ml-1">Slack Bots</div>
+                  //     </div>
+                  //   ),
+                  //   link: "/admin/bot",
+                  // },
                   {
                     name: (
                       <div className="flex">
@@ -145,7 +145,7 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                 ],
               },
               {
-                name: "Model Configs",
+                name: "模型配置",
                 items: [
                   {
                     name: (
@@ -168,13 +168,13 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                 ],
               },
               {
-                name: "User Management",
+                name: "用户管理",
                 items: [
                   {
                     name: (
                       <div className="flex">
                         <UsersIcon size={18} />
-                        <div className="ml-1">Users</div>
+                        <div className="ml-1">用户</div>
                       </div>
                     ),
                     link: "/admin/users",
@@ -182,13 +182,13 @@ export async function Layout({ children }: { children: React.ReactNode }) {
                 ],
               },
               {
-                name: "Settings",
+                name: "系统设置",
                 items: [
                   {
                     name: (
                       <div className="flex">
                         <FiSettings size={18} />
-                        <div className="ml-1">Workspace Settings</div>
+                        <div className="ml-1">工作空间设置</div>
                       </div>
                     ),
                     link: "/admin/settings",

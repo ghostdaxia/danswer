@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Danswer",
-  description: "Question answering for your documents",
+  title: "毕方知识智能服务平台",
+  description: "基于您的文档进行回答",
 };
 
 export const dynamic = "force-dynamic";

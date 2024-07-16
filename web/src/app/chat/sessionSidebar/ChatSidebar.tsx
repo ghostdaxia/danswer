@@ -73,7 +73,7 @@ export const ChatSidebar = ({
                 <Image src="/logo.png" alt="Logo" width="1419" height="1520" />
               </div>
               <h1 className="flex text-2xl text-strong font-bold my-auto">
-                Danswer
+                毕方
               </h1>
             </div>
           </Link>
@@ -92,7 +92,7 @@ export const ChatSidebar = ({
           >
             <BasicClickable fullWidth>
               <div className="flex items-center text-sm">
-                <FiEdit className="ml-1 mr-2" /> New Chat
+                <FiEdit className="ml-1 mr-2" /> 新会话
               </div>
             </BasicClickable>
           </Link>
@@ -124,7 +124,7 @@ export const ChatSidebar = ({
         <Link href="/assistants/mine" className="mt-3 mb-1 mx-3">
           <BasicClickable fullWidth>
             <div className="flex items-center text-default font-medium">
-              <FaBrain className="ml-1 mr-2" /> Manage Assistants
+              <FaBrain className="ml-1 mr-2" /> 管理助手
             </div>
           </BasicClickable>
         </Link>
